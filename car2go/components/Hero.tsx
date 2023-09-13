@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Find, book, or rent a car - quickly and easily!
+          Discover, reserve, or lease a vehicle swiftly and effortlessly!
         </h1>
 
         <p className="hero__subtitle">
@@ -22,13 +22,20 @@ const Hero = () => {
         <CustomButton
           title="Explore Cars"
           containerStyles="bg-teal-800 text-white rounded-full mt-10"
+          btnType="button"
           handleClick={handleScroll}
         />
       </div>
 
       <div className="hero__imgage-container">
         <div className="hero__image">
-          <img src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image
+            src="/hero.png"
+            alt="hero"
+            fill
+            className="object-contain"
+            max-width={1500}
+          />
           <div className="hero__image-overlay"></div>
         </div>
       </div>
