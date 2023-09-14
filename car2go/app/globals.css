@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-
+@import "~@fortawesome/fontawesome-free/css/all.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +13,7 @@
 
 /* START: General styles */
 .max-width {
-  @apply max-w-[1440px] mx-auto;
+  @apply max-w-[1500px] mx-auto;
 }
 
 .padding-x {
@@ -182,7 +182,7 @@
 }
 
 .footer__copyrights-link {
-  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+  @apply flex-1 flex md:justify-between sm:justify-end justify-center max-sm:mt-4 gap-10;
 }
 /* END: Footer styles */
 
