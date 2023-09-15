@@ -12,7 +12,7 @@ const Navbar = () => {
           <Image
             src="/car2go-logo-footer.png"
             alt="Car2Go Logo"
-            width={200}
+            width={120}
             height={18}
             className=" object-contaion"
             layout="fixed"
