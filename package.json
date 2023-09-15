@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@headlessui/react": "^1.7.17"
+    "@headlessui/react": "^1.7.17",
+    "@netlify/plugin-nextjs": "^4.40.1"
   }
 }
