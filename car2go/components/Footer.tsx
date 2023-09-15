@@ -11,7 +11,7 @@ const Footer = () => {
           <Image
             src="/car2go-logo.png"
             alt="car2go logo"
-            width={180}
+            width={115}
             height={18}
             className="object-contain"
             layout="fixed"

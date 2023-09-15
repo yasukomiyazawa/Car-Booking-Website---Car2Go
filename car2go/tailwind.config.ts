@@ -26,7 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         'pattern': "url('/pattern.png')",
-        'hero-bg': "url('/hero-bg.png')"
+        'hero-bg': "url('/hero-bg1.png')"
       },
       fontSize: {
         '30': '1.875rem', // Add your custom text size here
