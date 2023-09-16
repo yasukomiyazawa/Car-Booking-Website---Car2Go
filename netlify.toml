@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "netlify-plugin-cypress"
+
+[[redirects]]
+  from = "/api/cars"
+  to = "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla"
+  status = 200
+  force = true
