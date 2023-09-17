@@ -25,7 +25,7 @@ module.exports = {
         grey: "#747A88",
       },
       backgroundImage: {
-        'pattern': "url('/pattern.png')",
+        'pattern': "url('/pattern1.jpg')",
         'hero-bg': "url('/hero-bg1.png')"
       },
       fontSize: {
