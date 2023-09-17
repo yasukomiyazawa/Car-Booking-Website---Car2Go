@@ -17,16 +17,16 @@ const CustomButton = ({
       disabled={false}
       type={btnType || "button"}
       className={`custom-btn ${containerStyles}`}
-      onClick={() => {}}
+      onClick={handleClick}
     >
       <span className={`flex-1 ${textStyles}`}>{title}</span>
       {rightIcon && (
         <div className="relative w-6 h-6">
-          <Image 
+          <Image
             src={rightIcon}
             alt="right-icon"
             fill
-            className="object-contain"  
+            className="object-contain"
           />
         </div>
       )}

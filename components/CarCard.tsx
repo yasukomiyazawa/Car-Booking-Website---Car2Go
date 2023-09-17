@@ -68,17 +68,25 @@ const CarCard = ({ car }: CarCardProps) => {
 
         <div className="car-card__btn-container">
           <CustomButton
-            title="Read More"
-            btnType="button"
+            title="More Information"
             containerStyles="w-full py-[16px] rounded-full bg-green-800"
             textStyles="text-white text-[14px] leading-[17px] font-bold"
             rightIcon="/right-arrow.svg"
-            handleClick={() => setIsOpen(true)}
+            handleClick={() => {
+              console.log("Button clicked!"); // Add this line for debugging
+              setIsOpen(true);
+            }}
           />
         </div>
       </div>
 
-      <CarDetails />
+      <div>
+        <CarDetails
+          isOpen={isOpen}
+          closeModal={() => setIsOpen(false)}
+          car={car}
+        />
+      </div>
     </div>
   );
 };
