@@ -8,7 +8,7 @@ import { SearchManufacturer } from ".";
 import Image from "next/image";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
-  <button type="submit" className={`-ml-11 z-9 ${otherClasses}`}>
+  <button type="submit" className={`-ml-11 z-10 ${otherClasses}`}>
     <Image
       src="/magnifying-glass.svg"
       alt="magnifying glass"

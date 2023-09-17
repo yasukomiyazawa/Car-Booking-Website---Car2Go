@@ -1,8 +1,14 @@
 import Image from "next/image";
 import { Hero, SearchBar, CustomFilter, CarCard } from "@/components";
 import { fetchCars } from "@/utils";
+import { filterProps } from "@/types";
+import { fuels, yearsOfProduction } from "@/constants";
 
-export default async function Home({ searchParams }) {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: filterProps;
+}) {
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
     year: searchParams.year || 2023,
@@ -25,8 +31,8 @@ export default async function Home({ searchParams }) {
           <SearchBar />
 
           <div className="home__filter-container">
-            <CustomFilter />
-            <CustomFilter />
+            <CustomFilter title="fuel" options={fuels} />
+            <CustomFilter title="year" options={yearsOfProduction} />
           </div>
         </div>
 
