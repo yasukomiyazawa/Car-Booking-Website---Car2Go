@@ -1,13 +1,16 @@
-import { carProps } from "@/types";
+import { manufacturers } from "@/constants";
+import { carProps, filterProps } from "@/types";
 
-export async function fetchCars() {
+export async function fetchCars(filters: filterProps) {
+
+    const {manufacturer, year, model, limit, fuel} = filters
 
     const headers = {
         'X-RapidAPI-Key': 'ab27da6b9fmsh6d046dbf56ef08bp1dc099jsn7b775b0fc15f',
         'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
     }
 
-    const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=q3', {headers})
+    const response = await fetch(`https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&$year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`, {headers})
 
     const result = await response.json();
 
