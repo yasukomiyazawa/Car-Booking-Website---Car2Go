@@ -10,11 +10,11 @@ const Navbar = () => {
       <nav className="max-w[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Link href="/" className="flex justify-center items-center">
           <Image
-            src="/car2go-logo-footer.png"
+            src="/car2go-logo.png"
             alt="Car2Go Logo"
-            width={120}
+            width={180}
             height={18}
-            className=" object-contaion"
+            className=" object-contain"
             layout="fixed"
           />
         </Link>
