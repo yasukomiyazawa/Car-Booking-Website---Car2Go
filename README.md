@@ -1,3 +1,52 @@
+**Car Booking Website - Car2Go**
+
+**Description**
+
+Car2Go is a dynamic car booking platform that offers seamless user experiences. Users can easily browse available cars, book their preferred vehicle, and enjoy a convenient and reliable travel experience.
+
+**Table of Contents**
+
+- Installation
+- Usage
+- Features
+- Next.js (Getting Started)
+
+**Installation**
+
+To install the necessary packages, use the following command:
+
+      npm install car2go
+      
+**Usage**
+
+1. Download or Clone the Repository
+   
+First, download the project files from the repository or clone the repository to your local machine using Git.
+
+      git clone https://github.com/your-username/car2go.git
+      
+2. Install Dependencies
+   
+Navigate to the project directory and install the required packages using npm:
+
+      cd car2go
+      npm install
+
+3. Start the Project
+
+Start the project by running:
+
+      npm run dev
+
+The application will be accessible at http://localhost:3000/ by default.
+
+**Features**
+
+- Car Booking System
+- Real-time Availability Updates
+- User Profiles and Preferences
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
